@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ie8Gallery</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<style type="text/css">
+		*{margin:0;padding:0;list-style:none;}
+		body{padding:2em;font-size:16px;font-family:Arial,Helvetica,sans-serif;color:#666;background:#eee;line-height:1.5;}
+		h1{margin:3em 0 1em 0;text-align:center;font-size:2em;letter-spacing:0.05em;}
+		p{margin:1em 0;text-align:center;}
+		ul{margin:0 0 4em 0;text-align:center;letter-spacing:0.05em;}
+		img{border:0;}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="dist/css/ie8gallery.css" />
+
+	<script type="text/javascript" src="dist/js/ie8gallery.js"></script>
+
+	<script type="text/javascript">
+		document.onreadystatechange = function () {
+			if (document.readyState == "interactive") {
+				ie8Gallery = new Ie8Gallery().init({
+					thumbs: '#thumbs',          		// ID for Thumbnail Container
+					thumb: '.thumb',           			// Classname for Thumbnails
+					imageContainer: '#imageContainer',  // ID for the gallery image Container
+					galleryImage: '#galleryimage',      // ID for the gallery image
+					underlay: '#underlay',        		// ID for Underlay
+					overlay: '#overlay',         		// ID for Overlay
+					btnPrev: '#prev',            		// ID for Previous Button
+					btnNext: '#next',           		// ID for Next Button
+				});
+			}
+		}
+	</script>
+
+</head>
+<body>
+
+	<h1>ie8Gallery</h1>
+	<p><i>A very simple ie8 supported gallery.</i></p>
+
+	<ul>
+		<li>- Vanilla Js -</li>
+		<li>- no framework needed -</li>
+	</ul>
+
+	<div id="thumbs">
+		<img class="thumb" src="img/cat1-thumb.jpg" data-img-src="img/cat1.jpg" />
+		<img class="thumb" src="img/cat2-thumb.jpg" data-img-src="img/cat2.jpg" />
+		<img class="thumb" src="img/cat3-thumb.jpg" data-img-src="img/cat3.jpg" />
+		<img class="thumb" src="img/cat4-thumb.jpg" data-img-src="img/cat4.jpg" />
+		<img class="thumb" src="img/cat5-thumb.jpg" data-img-src="img/cat5.jpg" />
+		<img class="thumb" src="img/cat6-thumb.jpg" data-img-src="img/cat6.jpg" />
+		<img class="thumb" src="img/cat7-thumb.jpg" data-img-src="img/cat7.jpg" />
+	</div>
+
+</body>
+</html>
