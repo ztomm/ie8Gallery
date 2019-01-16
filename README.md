@@ -2,7 +2,7 @@
 
 A very simple gallery plugin, supported by Internet Explorer 8.
 
-**[DEMO](https://ie8galleryvanillajs.herokuapp.com/)**
+**[DEMO](https://ie8gallery.herokuapp.com/)**
 
 >written in pur JS, no Framework needed
 
